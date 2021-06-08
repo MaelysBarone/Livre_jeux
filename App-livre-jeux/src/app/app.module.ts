@@ -28,6 +28,8 @@ import { ErrorPageComponent } from './components/error-page/error-page.component
 import { StoreComponent } from './components/player/store/store.component';
 import { PlayGameComponent } from './components/player/play-game/play-game.component';
 import { ProfilComponent } from './authenticate/profil/profil.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -56,7 +58,10 @@ import { ProfilComponent } from './authenticate/profil/profil.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatGridListModule
+    MatGridListModule,
+    ReactiveFormsModule,
+    HttpClientModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
