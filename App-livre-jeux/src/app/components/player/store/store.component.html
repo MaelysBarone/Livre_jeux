@@ -1,1 +1,39 @@
-<p>store works!</p>
+<header>
+  <h1>Store</h1>
+  <div class="input-group mb-3">
+    <input type="text" class="form-control" placeholder="Search" aria-label="Recipient's username"
+      aria-describedby="button-addon2">
+    <button class="btn btn-outline-secondary" type="button" id="button-addon2">Search</button>
+  </div>
+</header>
+<body>
+  <section class="section__grid">
+    <mat-grid-list cols="4" gutterSize="60px" rowHeight="400px">
+      <mat-grid-tile *ngFor='let livre of livres'>
+        <a class="info__grid">
+            <button type="button" class="btn btn-secondary btn-sm">Duplicate</button>
+            <span class="title__book">{{ livre.name }}</span>
+            <span class="description__book">{{ livre.description }}</span>
+        </a>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </section>
+  <!-- <section class="pagination__bootstrap">
+    <nav aria-label="...">
+      <ul class="pagination">
+        <li class="page-item disabled">
+          <a class="page-link" href="#" tabindex="-1">Previous</a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item active">
+          <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+          <a class="page-link" href="#">Next</a>
+        </li>
+      </ul>
+    </nav>
+  </section> -->
+</body>
+

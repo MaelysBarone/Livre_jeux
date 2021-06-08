@@ -1,0 +1,40 @@
+header{
+h1{
+  font-size: 36px;
+}
+.input-group{
+  position: absolute;
+  right: 10px;
+  top: 5px;
+}
+}
+body {
+  background-color: grey;
+  margin: 50px;
+  padding: 100px;
+  height: auto;
+  mat-grid-tile {
+    background-color: whitesmoke;
+    .info__grid {
+      opacity: 0;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      height: 100%;
+      width: 100%;
+      padding: 25px;
+    }
+    .info__grid:hover {
+      transition:all 1.5s;
+      opacity: 0.8;
+      padding-top: 350px;
+      background-color: rgba(78, 78, 78, 0.568);
+    }
+    .btn{
+      margin: 20px;
+    }
+    .title__book{
+      font-size: 26px;
+    }
+  }
+}
