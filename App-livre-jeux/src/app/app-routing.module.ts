@@ -9,6 +9,7 @@ import { HomeComponent } from './components/home/home.component';
 import { LayoutComponent } from './layout/layout.component';
 
 const routes: Routes = [
+  {path:'store', component: StoreComponent},
   {path:'', component:LayoutComponent,
      children: [
       {path:'', redirectTo:'home', pathMatch:"full"},
@@ -18,7 +19,6 @@ const routes: Routes = [
       {path:'not-found', component:ErrorPageComponent},
       {path:'**', redirectTo:'/not-found'},
      ]},
-     { path:'store', component: StoreComponent },
 ];
 
 @NgModule({
