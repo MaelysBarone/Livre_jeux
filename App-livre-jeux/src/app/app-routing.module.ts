@@ -7,9 +7,11 @@ import { EditorLibraryComponent } from './components/editor/editor-library/edito
 import { ErrorPageComponent } from './components/error-page/error-page.component';
 import { HomeComponent } from './components/home/home.component';
 import { LayoutComponent } from './layout/layout.component';
+import { PlayerLibraryComponent } from './components/player/player-library/player-library.component';
 
 const routes: Routes = [
   {path:'store', component: StoreComponent},
+  {path:'player-library', component: PlayerLibraryComponent},
   {path:'', component:LayoutComponent,
      children: [
       {path:'', redirectTo:'home', pathMatch:"full"},

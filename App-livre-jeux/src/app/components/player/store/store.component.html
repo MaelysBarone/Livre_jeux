@@ -11,14 +11,14 @@
     <mat-grid-list cols="4" gutterSize="60px" rowHeight="400px">
       <mat-grid-tile *ngFor='let livre of livres'>
         <a class="info__grid">
-            <button type="button" class="btn btn-secondary btn-sm">Duplicate</button>
-            <span class="title__book">{{ livre.name }}</span>
+          <button type="button" class="btn btn-primary btn-sm">Duplicate</button>
+          <span class="title__book">{{ livre.name }}</span>
             <span class="description__book">{{ livre.description }}</span>
         </a>
       </mat-grid-tile>
     </mat-grid-list>
   </section>
-  <!-- <section class="pagination__bootstrap">
+  <section class="section__pagination--bootstrap">
     <nav aria-label="...">
       <ul class="pagination">
         <li class="page-item disabled">
@@ -34,6 +34,6 @@
         </li>
       </ul>
     </nav>
-  </section> -->
+  </section>
 </body>
 

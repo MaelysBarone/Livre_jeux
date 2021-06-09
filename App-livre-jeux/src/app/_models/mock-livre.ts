@@ -33,12 +33,12 @@ export const Livres: Livre[] = [
 },
 {
   id: 7,
-  name: 'Livre 6',
+  name: 'Livre 7',
   description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitationnon proident."
 },
 {
   id: 8,
-  name: 'Livre 6',
+  name: 'Livre 8',
   description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitationnon proident."
 },
 ]

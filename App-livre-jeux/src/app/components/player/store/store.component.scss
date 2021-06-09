@@ -1,20 +1,24 @@
-header{
-h1{
-  font-size: 36px;
-}
-.input-group{
-  position: absolute;
-  right: 10px;
-  top: 5px;
-}
+header {
+  h1 {
+    font-size: 36px;
+    margin-left: 34px;
+    margin-top: 15px;
+  }
+  .input-group {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    width: 20%;
+  }
 }
 body {
   background-color: grey;
-  margin: 50px;
-  padding: 100px;
+  margin: 30px;
+  padding: 70px;
   height: auto;
   mat-grid-tile {
     background-color: whitesmoke;
+
     .info__grid {
       opacity: 0;
       display: flex;
@@ -22,19 +26,26 @@ body {
       text-align: center;
       height: 100%;
       width: 100%;
-      padding: 25px;
+      padding: 20px;
+      overflow-y: scroll;
     }
     .info__grid:hover {
-      transition:all 1.5s;
+      transition: all 1.5s;
       opacity: 0.8;
-      padding-top: 350px;
+      padding-top: 5px;
       background-color: rgba(78, 78, 78, 0.568);
     }
-    .btn{
-      margin: 20px;
+    .btn {
+      margin: 15px;
     }
-    .title__book{
-      font-size: 26px;
+    .title__book {
+      font-size: 22px;
+      padding: 25px;
     }
+  }
+  .section__pagination--bootstrap {
+    display: flex;
+    justify-content: center;
+    padding-top: 55px;
   }
 }
