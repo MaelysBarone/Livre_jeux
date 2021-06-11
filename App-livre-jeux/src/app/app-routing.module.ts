@@ -8,8 +8,10 @@ import { ErrorPageComponent } from './components/error-page/error-page.component
 import { HomeComponent } from './components/home/home.component';
 import { LayoutComponent } from './layout/layout.component';
 import { PlayerLibraryComponent } from './components/player/player-library/player-library.component';
+import { PlayGameComponent } from './components/player/play-game/play-game.component';
 
 const routes: Routes = [
+  {path:'play-game-player', component: PlayGameComponent},
   {path:'store', component: StoreComponent},
   {path:'player-library', component: PlayerLibraryComponent},
   {path:'', component:LayoutComponent,
