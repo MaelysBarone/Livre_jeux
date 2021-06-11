@@ -11,15 +11,15 @@ import { PlayerLibraryComponent } from './components/player/player-library/playe
 import { PlayGameComponent } from './components/player/play-game/play-game.component';
 
 const routes: Routes = [
-  {path:'play-game-player', component: PlayGameComponent},
-  {path:'store', component: StoreComponent},
-  {path:'player-library', component: PlayerLibraryComponent},
   {path:'', component:LayoutComponent,
      children: [
       {path:'', redirectTo:'home', pathMatch:"full"},
       {path:'home', component:HomeComponent},
       {path:'profil', component:ProfilComponent},
       {path:'editor-library', component:EditorLibraryComponent},
+      {path:'player-library', component: PlayerLibraryComponent},
+      {path:'play-game-player', component: PlayGameComponent},
+      {path:'store', component: StoreComponent},
       {path:'not-found', component:ErrorPageComponent},
       {path:'**', redirectTo:'/not-found'},
      ]},

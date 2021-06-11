@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatIconModule } from '@angular/material/icon';
-
+import { MatTableModule } from '@angular/material/table'
 
 //Composant
 import { AppRoutingModule } from './app-routing.module';
@@ -62,7 +62,7 @@ import { HttpClientModule } from '@angular/common/http';
     ReactiveFormsModule,
     HttpClientModule,
     MatIconModule,
-
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
